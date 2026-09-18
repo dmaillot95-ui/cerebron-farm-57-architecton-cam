@@ -1,0 +1,18 @@
+name: ARCHITECTON CAM validate
+on:
+  push:
+  workflow_dispatch:
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python tools/validate_config.py
+      - run: python tests/test_cam_mvp.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: farm57-cam-mvp-evidence
+          path: artifacts/cam_mvp.json
