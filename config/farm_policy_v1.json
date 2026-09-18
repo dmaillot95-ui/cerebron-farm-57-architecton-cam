@@ -1,0 +1,12 @@
+{
+  "farm_id": 57,
+  "name": "ARCHITECTON CAM Ω",
+  "domain": "computer-aided-manufacturing",
+  "status": "SCAFFOLDED",
+  "safety": "digital artifacts only; no physical machine execution",
+  "evidence_rules": [
+    "CLAIM <= EVIDENCE",
+    "GENERATED TOOLPATH != SAFE MACHINING",
+    "G-CODE VALIDATION != MACHINE TEST"
+  ]
+}
