@@ -1,0 +1,23 @@
+{
+  "version": "1.0",
+  "engines": [
+    {
+      "engine_id": "PY-CAM-MVP",
+      "name": "Restricted G-code validator",
+      "category": "cam-validation",
+      "version": "1",
+      "capabilities": [
+        "parse G0/G1",
+        "path length",
+        "bounds check"
+      ],
+      "limitations": [
+        "no machine control",
+        "no collision geometry",
+        "not a CAM kernel"
+      ],
+      "validation_status": "MVP",
+      "benchmark_status": "PENDING"
+    }
+  ]
+}
